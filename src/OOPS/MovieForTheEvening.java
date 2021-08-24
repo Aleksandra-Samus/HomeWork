@@ -1,5 +1,9 @@
 package OOPS;
 
+import java.util.Arrays;
+import java.util.Scanner;
+
+
 public class MovieForTheEvening {
 	
 public String genre;
@@ -24,43 +28,63 @@ public void printMessage(String genre, String directorName, String movieTitle) {
 	System.out.println("Happy watching! :-)");
 }
 
+public String choiceOfGenre(String genre) {
+	
+	
+	Scanner sc = new Scanner(System.in);
+	System.out.println("Please choose the serial number of your favorite genre :");
+	System.out.println("1 -Horror, 2 -Comedy, 3- Action, 4- Drama, 5- Science fiction, 6- Documentary");
+	
+	int num = sc.nextInt();
+	
+	String [] array = {" ","Horror","Comedy","Action","Drama","Science fiction","Documentary"};
+	for(int i=0; i<8; i++) {
+		if (i==num) {
+			genre = Arrays.asList(array).get(i);
+		}
+		
+		
+	}
+	return genre;
+}
+
 public void choiceOfDirectorIsName(String genre){
 	switch (genre) {
 		case "Horror": 
 			System.out.println("Please enter the name of the director: ");
-			System.out.println("1 - David Cronenberg");
-			System.out.println("2 - Alfred Hitchcock");
-			System.out.println("3 - Ari Aster");
+			System.out.println("David Cronenberg");
+			System.out.println("Alfred Hitchcock");
+			System.out.println("Ari Aster");
 			break;
 		case "Comedy": 
 			System.out.println("Please enter the name of the director: ");
-			System.out.println("1 - Woody Allen");
-			System.out.println("2 - Ben Stiller");
-			System.out.println("3 - Kevin Smith");
+			System.out.println("Woody Allen");
+			System.out.println("Ben Stiller");
+			System.out.println("Kevin Smith");
 			break;
-		case "Ection": 
+		case "Action": 
 			System.out.println("Please enter the name of the director: ");
-			System.out.println("1 - James Cameron");
-			System.out.println("2 - John Woo");
-			System.out.println("3 - Stiven Spielberg");
+			System.out.println("James Cameron");
+			System.out.println("John Woo");
+			System.out.println("Stiven Spielberg");
 			break;
 		case "Drama": 
 			System.out.println("Please enter the name of the director: ");
-			System.out.println ("1 - Ethan Coen");
-			System.out.println ("2 - Spike Lee");
-			System.out.println ("3 - David Fincher");
+			System.out.println ("Ethan Coen");
+			System.out.println ("Spike Lee");
+			System.out.println ("David Fincher");
 			break;
 		case "Science fiction": 
 			System.out.println("Please enter the name of the director: ");
-			System.out.println ("1 - Christopher Nolan");
-			System.out.println ("2 - Ridley Scott");
-			System.out.println ("3 - Robert Zemeckis");
+			System.out.println ("Christopher Nolan");
+			System.out.println ("Ridley Scott");
+			System.out.println ("Robert Zemeckis");
 			break;
 		case "Documentary": 
 			System.out.println("Please enter the name of the director: ");
-			System.out.println("1 - Michael Moore");
-			System.out.println("2 - Errol Morris");
-			System.out.println("3 - Alex Gibney");
+			System.out.println("Michael Moore");
+			System.out.println("Errol Morris");
+			System.out.println("Alex Gibney");
 			break;
 	default:
 		System.out.println("Please, choose another genre!");	
@@ -70,111 +94,111 @@ public void choiceOfDirectorIsName(String genre){
 		switch(directorName) {
 		case "David Cronenberg":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - The Fly");
-			System.out.println("2 - Crash");
-			System.out.println("3 - Rabid");
+			System.out.println("The Fly");
+			System.out.println("Crash");
+			System.out.println("Rabid");
 			break;
 		case "Alfred Hitchcock":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Psycho");
-			System.out.println("2 - The Birds");
-			System.out.println("3 - Lifeboat");
+			System.out.println("Psycho");
+			System.out.println("The Birds");
+			System.out.println("Lifeboat");
 			break;
 		case "Ari Aster":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Beau");
-			System.out.println("2 - Hereditary");
-			System.out.println("3 - Midsommar");
+			System.out.println("Beau");
+			System.out.println("Hereditary");
+			System.out.println("Midsommar");
 			break;
 		case "Woody Allen":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - A rainy day in New York");
-			System.out.println("2 - Vicky Cristina Barcelona");
-			System.out.println("3 - Manhattan");
+			System.out.println("A rainy day in New York");
+			System.out.println("Vicky Cristina Barcelona");
+			System.out.println("Manhattan");
 			break;
 		case "Ben Stiller":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - The secret life of Walter Mitty");
-			System.out.println("2 - Tropic Thunder");
-			System.out.println("3 - Zoolander");
+			System.out.println("The secret life of Walter Mitty");
+			System.out.println("Tropic Thunder");
+			System.out.println("Zoolander");
 			break;
 		case "Kevin Smith":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Dogma");
-			System.out.println("2 - Clerks");
-			System.out.println("3 - Jersey Girl");
+			System.out.println("Dogma");
+			System.out.println("Clerks");
+			System.out.println("Jersey Girl");
 			break;
 		case "James Cameron":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Avatar");
-			System.out.println("2 - Terminator");
-			System.out.println("3 - True Lies");
+			System.out.println("Avatar");
+			System.out.println("Terminator");
+			System.out.println("True Lies");
 			break;
 		case "John Woo":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Fase Off");
-			System.out.println("2 - Broken Arrow");
-			System.out.println("3 - Red Cliff");
+			System.out.println("Fase Off");
+			System.out.println("Broken Arrow");
+			System.out.println("Red Cliff");
 			break;
 		case "Stiven Spielberg":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - War of the worlds");
-			System.out.println("2 - Indiana Jones");
-			System.out.println("3 - Jaws");
+			System.out.println("War of the worlds");
+			System.out.println("Indiana Jones");
+			System.out.println("Jaws");
 			break;
 		case "Ethan Coen":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - True grit");
-			System.out.println("2 - A serious man");
-			System.out.println("3 - Burn after reading");
+			System.out.println("True grit");
+			System.out.println("A serious man");
+			System.out.println("Burn after reading");
 			break;
 		case "Spike Lee":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Oldboy");
-			System.out.println("2 - 25-th hour");
-			System.out.println("3 - Bamboozled");
+			System.out.println("Oldboy");
+			System.out.println("25-th hour");
+			System.out.println("Bamboozled");
 			break;
 		case "David Fincher":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - The social network");
-			System.out.println("2 - Gone girl");
-			System.out.println("3 - The game");
+			System.out.println("The social network");
+			System.out.println("Gone girl");
+			System.out.println("The game");
 			break;
 		case "Christopher Nolan":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Inception");
-			System.out.println("2 - Tenet");
-			System.out.println("3 - Interstellar");
+			System.out.println("Inception");
+			System.out.println("Tenet");
+			System.out.println("Interstellar");
 			break;
 		case "Ridley Scott":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - The marcian");
-			System.out.println("2 - Alien");
-			System.out.println("3 - Blade runner");
+			System.out.println("The marcian");
+			System.out.println("Alien");
+			System.out.println("Blade runner");
 			break;
 		case "Robert Zemeckis":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Back to the Future");
-			System.out.println("2 - Contact");
-			System.out.println("3 - Beowulf");
+			System.out.println("Back to the Future");
+			System.out.println("Contact");
+			System.out.println("Beowulf");
 			break;
 		case "Michael Moore":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Bowling for Columbine");
-			System.out.println("2 - Fahrenheit 9/11");
-			System.out.println("3 - Sicko");
+			System.out.println("Bowling for Columbine");
+			System.out.println("Fahrenheit 9/11");
+			System.out.println("Sicko");
 			break;
 		case "Errol Morris":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Fast, Cheap and out of control");
-			System.out.println("2 - The fog of war");
-			System.out.println("3 - The thin blue line");
+			System.out.println("Fast, Cheap and out of control");
+			System.out.println("The fog of war");
+			System.out.println("The thin blue line");
 			break;
 		case "Alex Gibney":
 			System.out.println("Please choose a title for your movie: ");
-			System.out.println("1 - Taxi to the dark side");
-			System.out.println("2 - The smartest guys in the room");
-			System.out.println("3 - Going clear");
+			System.out.println("Taxi to the dark side");
+			System.out.println("The smartest guys in the room");
+			System.out.println("Going clear");
 			break;
 		default:
 			System.out.println("Please, choose another title movie!");

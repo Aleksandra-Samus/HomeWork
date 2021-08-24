@@ -11,7 +11,6 @@ private String address;
 private String email;
 
 public PersonalData(String name, String surname, int yearOfBirth, int id, int sin, String address, String email) {
-	super();
 	this.name = name;
 	this.surname = surname;
 	this.yearOfBirth = yearOfBirth;
