@@ -3,9 +3,9 @@ package ExtraHW;
 public class Dog {
 public static void main(String[] args) {
 		
-		Dog dog1 = new Dog();
-		dog1.Breed("Golden Retriver");
-		dog1.dogAge(5);
+		Dog dog = new Dog();
+		dog.Breed("Golden Retriver");
+		dog.dogAge(5);
 		
 		}
 	
